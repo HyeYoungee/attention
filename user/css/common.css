@@ -559,7 +559,7 @@ header .login-ok-btn > div:hover > a > i {
 #recent{
   width: 100px;
   border: 1px solid var(--gray);
-  bottom: 292px;
+  bottom: 230px;
   right: calc(50% + -825px);
   cursor: pointer;
   opacity: 0;
@@ -605,7 +605,7 @@ header .login-ok-btn > div:hover > a > i {
   height: 50px;
   border: 1px solid var(--gray);
   border-radius: 50%;
-  bottom: 231px;
+  bottom: 160px;
   right: calc(50% + -800px);
   opacity: 0;
   visibility: hidden;
