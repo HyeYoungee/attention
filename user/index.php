@@ -107,20 +107,14 @@
       <!-- Slides -->
       <div class="swiper-slide slide1">
         <div class="container_cr">
-          <!-- <h3 class="tt_00 mg_bot">디자인 트렌드 끝판왕,<br>Figma와 Blender 타파하기</h3> -->
-          <!-- <p class="text1">다양한 직군과 효율적으로 협업하고<br>무료로 3D 모델링까지 배워요!</p> -->
         </div>
       </div>
       <div class="swiper-slide slide2">
         <div class="container_cr">
-          <!-- <h3 class="tt_00 mg_bot">디자인 트렌드 끝판왕,<br>Figma와 Blender 타파하기</h3> -->
-          <!-- <p class="text1">다양한 직군과 효율적으로 협업하고<br>무료로 3D 모델링까지 배워요!</p> -->
         </div>
       </div>
       <div class="swiper-slide slide3">
         <div class="container_cr">
-          <!-- <h3 class="tt_00 mg_bot">디자인 트렌드 끝판왕,<br>Figma와 Blender 타파하기</h3> -->
-          <!-- <p class="text1">다양한 직군과 효율적으로 협업하고<br>무료로 3D 모델링까지 배워요!</p> -->
         </div>
       </div>
     </div>
@@ -165,11 +159,13 @@
           <a href="/attention/user/class/class_detail_view.php?pid=<?= $item->pid; ?>" class="d-block">
             <img src="<?= $item->thumbnail; ?>" alt="썸네일 이미지">
             <div class="text_box">
-              <h3 class="card_tt mb-3"><?= $item->name; ?></h3>
-              <p class="text5 name dark_gray"><?= $item->teacher; ?></p>
-              <p class="text5 dark_gray"><?= ($item->level == 1) ? '초급' : (($item->level == 2) ? '중급' : '고급'); ?> &nbsp;|&nbsp; 
-                <span class="orange">₩<span class="price"><?= ($item->price_val == 0) ? '무료' : number_format($item->price_val); ?></span></span>
-              </p>
+              <h3 class="card_tt"><?= $item->name; ?></h3>
+              <div>
+                <p class="text5 name dark_gray"><?= $item->teacher; ?></p>
+                <p class="text5 dark_gray"><?= ($item->level == 1) ? '초급' : (($item->level == 2) ? '중급' : '고급'); ?> &nbsp;|&nbsp; 
+                  <span class="orange">₩<span class="price"><?= ($item->price_val == 0) ? '무료' : number_format($item->price_val); ?></span></span>
+                </p>
+              </div>
             </div>
           </a>
           <button type="button" name="add_cart" class="cart_btn ctBtn" value="<?= $item->pid; ?>"><i class="bi bi-cart3 icon_mint"></i></button>
@@ -201,10 +197,12 @@
             <img src="<?= $item->thumbnail; ?>" alt="썸네일 이미지">
             <div class="best_box">
               <p class="card_tt mb-4"><?= $item->name; ?></p>
-              <p class="text5 dark_gray mb-2"><?= $item->teacher; ?></p>
-              <p class="text5 dark_gray"><?= ($item->level == 1) ? '초급' : (($item->level == 2) ? '중급' : '고급'); ?> &nbsp;|&nbsp; 
-                <span class="orange">₩<span class="price"><?= ($item->price_val == 0) ? '무료' : number_format($item->price_val); ?></span></span>
-              </p>
+              <div>
+                <p class="text5 dark_gray mb-2"><?= $item->teacher; ?></p>
+                <p class="text5 dark_gray"><?= ($item->level == 1) ? '초급' : (($item->level == 2) ? '중급' : '고급'); ?> &nbsp;|&nbsp; 
+                  <span class="orange">₩<span class="price"><?= ($item->price_val == 0) ? '무료' : number_format($item->price_val); ?></span></span>
+                </p>
+              </div>
             </div>
           </a>
           <button type="button" name="add_cart" class="cart_btn ctBtn" value="<?= $item->pid; ?>"><i class="bi bi-cart3 icon_mint"></i></button>
@@ -222,10 +220,12 @@
             <img src="<?= $item->thumbnail; ?>" alt="썸네일 이미지">
             <div class="best_box">
               <p class="card_tt mb-4"><?= $item->name; ?></p>
-              <p class="text5 dark_gray mb-2"><?= $item->teacher; ?></p>
-              <p class="text5 dark_gray"><?= ($item->level == 1) ? '초급' : (($item->level == 2) ? '중급' : '고급'); ?> &nbsp;|&nbsp; 
-                <span class="orange">₩<span class="price"><?= ($item->price_val == 0) ? '무료' : number_format($item->price_val); ?></span></span>
-              </p>
+              <div>
+                <p class="text5 dark_gray mb-2"><?= $item->teacher; ?></p>
+                <p class="text5 dark_gray"><?= ($item->level == 1) ? '초급' : (($item->level == 2) ? '중급' : '고급'); ?> &nbsp;|&nbsp; 
+                  <span class="orange">₩<span class="price"><?= ($item->price_val == 0) ? '무료' : number_format($item->price_val); ?></span></span>
+                </p>
+              </div>
             </div>
           </a>
           <button type="button" name="add_cart" class="cart_btn ctBtn" value="<?= $item->pid; ?>"><i class="bi bi-cart3 icon_mint"></i></button>
@@ -243,10 +243,12 @@
             <img src="<?= $item->thumbnail; ?>" alt="썸네일 이미지">
             <div class="best_box">
               <p class="card_tt mb-4"><?= $item->name; ?></p>
-              <p class="text5 dark_gray mb-2"><?= $item->teacher; ?></p>
-              <p class="text5 dark_gray"><?= ($item->level == 1) ? '초급' : (($item->level == 2) ? '중급' : '고급'); ?> &nbsp;|&nbsp; 
-                <span class="orange">₩<span class="price"><?= ($item->price_val == 0) ? '무료' : number_format($item->price_val); ?></span></span>
-              </p>
+              <div>
+                <p class="text5 dark_gray mb-2"><?= $item->teacher; ?></p>
+                <p class="text5 dark_gray"><?= ($item->level == 1) ? '초급' : (($item->level == 2) ? '중급' : '고급'); ?> &nbsp;|&nbsp; 
+                  <span class="orange">₩<span class="price"><?= ($item->price_val == 0) ? '무료' : number_format($item->price_val); ?></span></span>
+                </p>
+              </div>
             </div>
           </a>
           <button type="button" name="add_cart" class="cart_btn ctBtn" value="<?= $item->pid; ?>"><i class="bi bi-cart3 icon_mint"></i></button>
@@ -264,10 +266,12 @@
             <img src="<?= $item->thumbnail; ?>" alt="썸네일 이미지">
             <div class="best_box">
               <p class="card_tt mb-4"><?= $item->name; ?></p>
-              <p class="text5 dark_gray mb-2"><?= $item->teacher; ?></p>
-              <p class="text5 dark_gray"><?= ($item->level == 1) ? '초급' : (($item->level == 2) ? '중급' : '고급'); ?> &nbsp;|&nbsp; 
-                <span class="orange">₩<span class="price"><?= ($item->price_val == 0) ? '무료' : number_format($item->price_val); ?></span></span>
-              </p>
+              <div>
+                <p class="text5 dark_gray mb-2"><?= $item->teacher; ?></p>
+                <p class="text5 dark_gray"><?= ($item->level == 1) ? '초급' : (($item->level == 2) ? '중급' : '고급'); ?> &nbsp;|&nbsp; 
+                  <span class="orange">₩<span class="price"><?= ($item->price_val == 0) ? '무료' : number_format($item->price_val); ?></span></span>
+                </p>
+              </div>
             </div>
           </a>
           <button type="button" name="add_cart" class="cart_btn ctBtn" value="<?= $item->pid; ?>"><i class="bi bi-cart3 icon_mint"></i></button>
@@ -308,16 +312,14 @@
       <div>
         <div class="d-flex gap-4 mt-5">
           <img src="img/main/icon_playstore.png" alt="playstore 아이콘">
-          <!-- <img src="img/main/icon_qr_android.svg" alt="qr코드 아이콘"> -->
-          <img src="img/main/qr_admin.png" alt="qr코드 아이콘">
+          <img src="img/main/qr_admin.png" alt="관리자페이지 qr코드">
         </div>
         <p class="mt-3 text-center">Android</p>
       </div>
       <div>
         <div class="d-flex gap-4 mt-5">
           <img src="img/main/icon_appstore.png" alt="appstore 아이콘">
-          <!-- <img src="img/main/icon_qr_ios.svg" alt="qr코드 아이콘"> -->
-          <img src="img/main/qr_user.png" alt="qr코드 아이콘">
+          <img src="img/main/qr_user.png" alt="사용자페이지 qr코드">
         </div>
         <p class="mt-3 text-center">ios</p>
       </div>
@@ -424,8 +426,8 @@
             <p class="col-2 text-center"><?= $no -> regdate; ?></p>
           </div>
           <?php
-            } //foreach
-          } 
+              } //foreach
+            } 
           ?>
         </div>
       </div>

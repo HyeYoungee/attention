@@ -160,11 +160,16 @@ section .text2 {
 }
 /* /line */
 
-/* text_box */
-  .text_box {
+/* text_box, best_box */
+  .text_box,
+  .best_box {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 160px;
   }
-/* /text_box */
+/* /text_box, best_box */
 
 
 
@@ -195,9 +200,6 @@ section .text2 {
 }
 .best .best_list li img{
   height: 216px;
-}
-.best .best_list .best_box{
-  padding: 20px 15px;
 }
 .best .text5{
   line-height: var(--base-unit);
